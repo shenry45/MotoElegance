@@ -1,0 +1,24 @@
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+}
+
+section.hero {
+  width: 100%;
+  height: 90%;
+  background: url("https://www.quattrodaily.com/wp-content/uploads/2019/07/2020-chevrolet-corvette-stingray-048.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=styles.css.map */
