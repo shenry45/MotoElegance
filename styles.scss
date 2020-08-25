@@ -1,23 +1,104 @@
-html {height: 100%;}
+// VARIABLES
+$mobile: 400px;
+$tablet: 700px;
 
-body {
-    width: 100%;
-    height: 100%;
+// GENERICS
+* {box-sizing: border-box;}
+html {height: 100%;}
+p {color: #595959;}
+h2 {font-size: 40px;}
+h3 {font-size: 22px;}
+h4 {font-size: 20px;}
+body {margin: 0;height: 100%;}
+
+h1, h2, h3, h4, h5, h6, p, button {
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+// CONTAINER SPECIFIC
 .container {
-    height: 100%;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    padding: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    color: #fff;
+    text-align: right;
+
+    img {
+        height: 65px;
+    }
+
+    .menu {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: center;
+    }
 }
 
 section {
+    margin-bottom: 50px;
+
     &.hero {
-        width: 100%;
+        // width: 100%;
         height: 90%;
         background: url('https://www.quattrodaily.com/wp-content/uploads/2019/07/2020-chevrolet-corvette-stingray-048.jpg');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        clip-path: polygon(100% 0, 100% 97%, 0 100%, 0 0);
+        position: relative;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding-bottom: 80%;
+
+        h1 {
+            font-size: 90px;
+            color: #fff;
+        }
+
+        h3 {
+            color: #cacaca;
+            font-weight: normal;
+        }
+
+        .cta {
+            font-size: 19px;
+            position: absolute;
+            bottom: 15%;
+            padding: 10px 30px;
+            border-radius: 5px;
+            background-color: #fff;
+            border: 2px solid #d1d1d1;
+            color: black;
+            font-weight: bold;
+        }
     }
+
+    &.features {
+        .card {
+            margin-bottom: 20px;
+
+            img {
+                width: 100%;
+                margin: 20px 0px 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .desktop {display:none}
 }

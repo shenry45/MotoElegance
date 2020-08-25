@@ -1,24 +1,145 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
 
+p {
+  color: #595959;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
 body {
-  width: 100%;
+  margin: 0;
   height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, button {
   margin: 0;
   padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
-  height: 100%;
+  padding: 20px;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  text-align: right;
+}
+
+header img {
+  height: 65px;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section {
+  margin-bottom: 50px;
 }
 
 section.hero {
-  width: 100%;
   height: 90%;
   background: url("https://www.quattrodaily.com/wp-content/uploads/2019/07/2020-chevrolet-corvette-stingray-048.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-clip-path: polygon(100% 0, 100% 97%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 97%, 0 100%, 0 0);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  padding-bottom: 80%;
+}
+
+section.hero h1 {
+  font-size: 90px;
+  color: #fff;
+}
+
+section.hero h3 {
+  color: #cacaca;
+  font-weight: normal;
+}
+
+section.hero .cta {
+  font-size: 19px;
+  position: absolute;
+  bottom: 15%;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 2px solid #d1d1d1;
+  color: black;
+  font-weight: bold;
+}
+
+section.features .card {
+  margin-bottom: 20px;
+}
+
+section.features .card img {
+  width: 100%;
+  margin: 20px 0px 0px;
+}
+
+@media (max-width: 400px) {
+  .desktop {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
