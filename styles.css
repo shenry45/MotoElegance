@@ -28,14 +28,31 @@ body {
   height: 100%;
 }
 
+.desktop {
+  display: none;
+}
+
 h1, h2, h3, h4, h5, h6, p, button {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
-  padding: 20px;
+img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+img:hover, img:active, img:focus {
+  opacity: 0.9;
+  -webkit-filter: opacity(0.9);
+          filter: opacity(0.9);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container section {
+  padding: 0px 20px;
 }
 
 header {
@@ -81,13 +98,13 @@ section {
 }
 
 section.hero {
-  height: 90%;
+  height: 100%;
   background: url("https://www.quattrodaily.com/wp-content/uploads/2019/07/2020-chevrolet-corvette-stingray-048.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-clip-path: polygon(100% 0, 100% 97%, 0 100%, 0 0);
-          clip-path: polygon(100% 0, 100% 97%, 0 100%, 0 0);
+  -webkit-clip-path: polygon(100% 0, 100% 94%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 94%, 0 100%, 0 0);
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,9 +154,61 @@ section.features .card img {
   margin: 20px 0px 0px;
 }
 
-@media (max-width: 400px) {
+section.highlight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  background: linear-gradient(45deg, #890525, #5a0219);
+  padding: 50px 0;
+}
+
+section.highlight .hcard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+section.highlight .hcard img {
+  width: 100px;
+}
+
+section.highlight .hcard p {
+  color: #fff;
+  font-size: 20px;
+}
+
+section.highlight .hcard i {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+@media (min-width: 700px) {
   .desktop {
-    display: none;
+    display: block;
+  }
+  section.highlight {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */
