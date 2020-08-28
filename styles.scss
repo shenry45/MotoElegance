@@ -9,6 +9,7 @@ p {color: #595959;}
 h2 {font-size: 40px;}
 h3 {font-size: 22px;}
 h4 {font-size: 20px;}
+hr {margin-bottom: 25px;}
 body {margin: 0;height: 100%;}
 .desktop {display:none}
 
@@ -106,7 +107,6 @@ section {
 
             img {
                 width: 100%;
-                margin: 20px 0px 0px;
             }
         }
     }
@@ -115,6 +115,9 @@ section {
         display: flex;
         flex-flow: column nowrap;
         background: linear-gradient(45deg, #890525, #5a0219);
+        background: url('./assets/smoke-background.jpg');
+        background-position: center bottom;
+        background-size: cover;
         padding: 50px 0;
 
         .hcard {
@@ -136,6 +139,33 @@ section {
             i {
                 font-weight: bold;
                 font-size: 25px;
+            }
+        }
+    }
+
+    &.packages {
+        .pcard {
+            .card-content {
+                padding: 20px;
+                background: linear-gradient(to bottom, #f1f1f1, #ffffff);
+                margin-top: -22px;
+                margin-left: 20px;
+                margin-bottom: 30px;
+                color: #000000;
+                clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+
+                .more {
+                    font-style: italic;
+                    color: #808080;
+                    padding: 5px 20px;
+                    background: white;
+                    border: 1px solid #ececec;
+                }
+            }
+
+            img {
+                position: relative;
+                z-index: 2;
             }
         }
     }

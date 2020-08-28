@@ -23,6 +23,10 @@ h4 {
   font-size: 20px;
 }
 
+hr {
+  margin-bottom: 25px;
+}
+
 body {
   margin: 0;
   height: 100%;
@@ -151,7 +155,6 @@ section.features .card {
 
 section.features .card img {
   width: 100%;
-  margin: 20px 0px 0px;
 }
 
 section.highlight {
@@ -163,6 +166,9 @@ section.highlight {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   background: linear-gradient(45deg, #890525, #5a0219);
+  background: url("./assets/smoke-background.jpg");
+  background-position: center bottom;
+  background-size: cover;
   padding: 50px 0;
 }
 
@@ -192,6 +198,31 @@ section.highlight .hcard p {
 section.highlight .hcard i {
   font-weight: bold;
   font-size: 25px;
+}
+
+section.packages .pcard .card-content {
+  padding: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(#ffffff));
+  background: linear-gradient(to bottom, #f1f1f1, #ffffff);
+  margin-top: -22px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  color: #000000;
+  -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+          clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+}
+
+section.packages .pcard .card-content .more {
+  font-style: italic;
+  color: #808080;
+  padding: 5px 20px;
+  background: white;
+  border: 1px solid #ececec;
+}
+
+section.packages .pcard img {
+  position: relative;
+  z-index: 2;
 }
 
 @media (min-width: 700px) {
