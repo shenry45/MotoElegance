@@ -13,7 +13,7 @@ hr {margin-bottom: 25px;}
 body {margin: 0;height: 100%;}
 .desktop {display:none}
 
-h1, h2, h3, h4, h5, h6, p, button {
+h1, h2, h3, h4, h5, h6, p, button, li {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -166,7 +166,51 @@ section {
             img {
                 position: relative;
                 z-index: 2;
+                background: #000;
+                padding: 10px 20px;
             }
+        }
+    }
+
+    &.schedule {
+        background: url(assets/engine-bay-highlight.jpg);
+        background-position: bottom left;
+        background-size: cover;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        color: white;
+
+        h2, p {
+            margin-bottom: 25px;
+        }
+
+        p {
+            color: #e0e0e0;
+        }
+
+        .cta {
+            font-size: 19px;
+            padding: 10px 30px;
+            border-radius: 5px;
+            background-color: #c50000;
+            border: 2px solid #8d0202
+            ;
+            color: #efefef;
+            font-weight: bold;
+            transition: 0.25s;
+
+            &:hover {
+                background-color: #840000;
+                transition: 0.25s;
+            }
+        }
+    }
+
+    &.references {
+        font-size: 12px;
+
+        p {
+            color: #dadada;
         }
     }
 }
