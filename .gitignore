@@ -1,5 +1,6 @@
 *.css.map
 *.psd
 *.ai
+!assets/*.ai
 *.txt
 .env
