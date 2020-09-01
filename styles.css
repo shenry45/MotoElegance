@@ -42,8 +42,13 @@ body {
 }
 
 a {
+  cursor: pointer;
   color: #fff;
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 .desktop {
@@ -337,6 +342,36 @@ footer nav a {
   .desktop {
     display: block;
   }
+  .container section, header {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  section.hero {
+    padding-bottom: 0;
+    padding-top: 15%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    background-attachment: fixed;
+  }
+  section.features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  section.features h2 {
+    display: none;
+  }
+  section.features .card {
+    width: 30%;
+    margin-bottom: 0;
+  }
   section.highlight {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -348,6 +383,21 @@ footer nav a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  section.about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.about div {
+    width: 46%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
