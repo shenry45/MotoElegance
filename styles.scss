@@ -276,10 +276,29 @@ footer {
     .desktop {
         display: block;
     }
+    .mobile {
+        display: none;
+    }
 
     .container section, header, footer {
         padding-left: 15%;
         padding-right: 15%;
+    }
+
+    header {
+        nav {
+            display: flex;
+            align-items: center;
+        }        
+
+        .menu {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        a {
+            margin-left: 15px;
+        }
     }
 
     section {
